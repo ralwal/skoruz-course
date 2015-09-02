@@ -1,0 +1,32 @@
+echo "1.Addition"
+echo "2.substraction"
+echo "3.Multiplication"
+echo "4.Division"
+
+
+echo "select option "
+
+read number
+
+echo "enter two values "
+
+read a
+read b
+case "$number" in
+1)
+
+echo "addition of $a and $b is `expr $a + $b`"
+;;
+2)
+
+echo "substraction of $a and $b is `expr $a - $b`"
+;;
+3)
+echo "multiplication of $a and $b is `expr $a * $b`"
+;;
+4)
+echo "division of $a and $b is `expr $a / $b`"
+;;
+*)
+echo "Invalid Option"
+esac
