@@ -1,0 +1,11 @@
+echo "Enter the number"
+read a
+j=$a
+while [ $j -gt 0 ]
+do
+echo -e "Waiting for $j secs... \n"
+j=$(( j - 1 ))
+sleep 1s
+done
+echo "Wait is Over...Hello There !"
+
